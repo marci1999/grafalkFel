@@ -20,7 +20,32 @@ namespace GrafFeladat_CSharp
             graf.Hozzaad(4, 5);
             graf.Hozzaad(2, 4);
 
+            //graf.torol(2);
+            Console.WriteLine("szélességi bejárás");
+            foreach (var item in graf.selsegBejaras(0))
+	        {
+                Console.WriteLine(item);
+	        }
+            Console.WriteLine();
+
+            Console.WriteLine("mélységi bejárás");
+            foreach (var item in graf.mejsegibelyaras(0))
+	        {
+                Console.WriteLine(item);
+	        }
+            Console.WriteLine();
+            Console.WriteLine((graf.bejarhato(0))? "a gráf bejárhtó" : "a gráf nem bejárhtó");
+            Console.WriteLine();
+
+            
+
             Console.WriteLine(graf);
+
+            graf.feszitoFa();
+
+            Console.WriteLine("fesziton fa");
+            Console.WriteLine(graf);
+
             Console.ReadLine();
         }
     }

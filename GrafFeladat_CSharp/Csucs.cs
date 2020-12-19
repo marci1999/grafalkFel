@@ -19,6 +19,10 @@
             this.id = id;
         }
 
+        public int getId(){
+            return this.id;
+        }
+
         public override string ToString()
         {
             return this.id.ToString();
